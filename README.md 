@@ -1,0 +1,72 @@
+# Fake API Builder Project
+
+## Project Overview
+
+A powerful local API simulation tool built with:
+- **Frontend**: React + Vite + Material UI
+- **Backend**: Node.js + Express
+- **Features**:
+  - Dynamic API endpoint creation
+  - Support for all HTTP methods (GET/POST/PUT/DELETE)
+  - Custom JSON response configuration
+  - Item-level access endpoints
+  - Beautiful Material UI interface
+
+## Technical Implementation
+
+This project was developed using modern web technologies to provide a seamless experience for creating mock APIs:
+
+### Frontend Architecture
+- React 18+ for component-based UI
+- Vite for ultra-fast development builds
+- Material UI v5 for polished interface components
+- Custom theme configuration
+- Responsive design
+
+### Backend Services
+- Express.js RESTful server
+- File-based storage for API definitions
+- Dynamic route handling
+- CORS support
+- Error handling middleware
+
+## Development Notes
+
+### Key Features Implemented
+- Interactive API creation form
+- Real-time JSON validation
+- Copy-to-clipboard functionality
+- Snackbar notifications
+- Dark/light theme support
+- Comprehensive error handling
+
+## Deployment
+
+To set up this project locally:
+```bash
+# Clone repository
+git clone https://github.com/lansow/local-fake-api.git
+cd local-fake-api
+
+# Install dependencies
+cd server && npm install
+cd ../client && npm install
+
+# Run both servers
+cd ../server && npm start
+cd ../client && npm run dev
+```
+
+## Acknowledgments
+
+This project was developed with the assistance of AI technologies to:
+- Optimize code structure
+- Implement best practices
+- Solve complex technical challenges
+- Enhance user experience
+
+The collaboration between human expertise and AI capabilities resulted in this robust and efficient API simulation tool.
+
+---
+
+**Note**: This project is intended for development and testing purposes only. Always follow best security practices when working with APIs.
