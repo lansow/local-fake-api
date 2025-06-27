@@ -59,4 +59,4 @@ cd ../client && npm run dev
 
 🔗 *Project Repository*: [github.com/lansow/local-fake-api](https://github.com/lansow/local-fake-api)
 
-** powered by lansow and ai
+** powered by lansow and ai **
