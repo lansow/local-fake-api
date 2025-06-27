@@ -58,3 +58,5 @@ cd ../client && npm run dev
 **📌 Important**: For development/testing purposes only. Not recommended for production use.  
 
 🔗 *Project Repository*: [github.com/lansow/local-fake-api](https://github.com/lansow/local-fake-api)
+
+** powered by lansow and ai
