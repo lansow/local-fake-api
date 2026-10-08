@@ -30,7 +30,7 @@ import { Alert } from "@mui/material";
 import { ContentCopy } from "@mui/icons-material";
 // import { styled } from "@mui/system";
 
-function ItemsPopup({ apiId, items, onClose }) {
+function ItemsPopup({ api, items, onClose }) {
   const [open, setOpen] = useState(true);
   const theme = useTheme();
 
@@ -41,7 +41,7 @@ function ItemsPopup({ apiId, items, onClose }) {
 
   const copyItemUrl = (itemId) => {
     navigator.clipboard.writeText(
-      `http://localhost:3001/api/${apiId}/${itemId}`
+      `http://localhost:3001${api.endpoint || `/api/${api.id}`}/${itemId}`
     );
     onClose(`Copied item URL: ${itemId}`, "success");
   };
@@ -313,7 +313,7 @@ function App() {
                       variant='outlined'
                       size='small'
                       onClick={() =>
-                        copyToClipboard(`http://localhost:3001/api/${api.id}`)
+                        copyToClipboard(`http://localhost:3001${api.endpoint || `/api/${api.id}`}`)
                       }
                     >
                       Copy All
@@ -348,7 +348,7 @@ function App() {
       </Snackbar>
       {selectedApi && (
         <ItemsPopup
-          apiId={selectedApi.id}
+          api={selectedApi}
           items={selectedApi.items}
           onClose={(message, severity) => {
             setSelectedApi(null);
